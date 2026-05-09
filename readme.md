@@ -1,3 +1,3 @@
-### Landing Page Nexcent
+# Landing Page Nexcent
 
-# En esta landing page pongo en marcha mis conocimientos con html css 
+## En esta landing page pongo en marcha mis conocimientos con html css 
