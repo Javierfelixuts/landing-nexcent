@@ -1,0 +1,352 @@
+@import url("./fonts.css");
+@import url("./default.css");
+:root {
+    --width-image: 20rem;
+    --width-card: 15rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(1rem, 2vw, 6.25rem);
+}
+.logo div {
+    padding: .5rem;
+}
+.logo div img {
+    width: 39px;
+}
+.logo h1 {
+    font-size: 1.5rem;
+}
+nav div {
+    padding: .5rem !important;
+}
+nav div ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: .8rem;
+}
+
+.register-btn {
+    padding:  15px 22px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    text-decoration: none;
+    width: fit-content;
+
+}
+
+.register-btn svg {
+    width: 2rem;
+    margin-left: .5rem;
+}
+main {
+    background: #F5F7FA;
+    position: relative;
+}
+.hero {
+    padding: 7rem 4rem;
+}
+.hero-content h2 {
+    font-size: 4.5rem;
+}
+.hero-content h2 + p {
+    margin: .7rem 0 2rem 0;
+    font-size: 1rem;
+}
+.hero-image img {
+    width: 280px;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    position: absolute;
+    left: 50%;
+}
+.dots div {
+    width: 10px;
+    height: 10px;
+    background-color: #C8E6C9;
+    border-radius: 50%;
+    margin: 0.2rem;
+}
+.dots div.active {
+    background-color: #4CAF50;
+}
+
+
+/* Section: Our Clients */
+section.our-clients {
+    padding: 4rem 0;
+}
+section.our-clients h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+section.our-clients p {
+    margin-bottom: 2rem;
+
+}
+ /* section: manage-community */
+
+section.manage-community {
+    padding: 3rem 0;
+}
+section.manage-community h3 {
+    max-width: 377px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+section.manage-community p {
+    margin: 2rem 0;
+
+}
+
+.card {
+    max-width: 300px;
+    width: fit-content;
+    box-shadow: 0px 2px 8px rgb(86 86 86 / 10%);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.manage-community .cards .card div img {
+    width: 3rem;
+    margin: 0 auto;
+}
+.manage-community .cards .card h4 {
+    font-size: 1.3rem;
+}
+
+/* section: pixelgrade */
+.pixelgrade .pixel-image img {
+    max-width: 20rem;
+    margin: 1rem 3rem;
+}
+
+.pixel-content {
+    max-width: 27rem;
+    width: fit-content;
+    text-align: left;
+}
+.pixel-content h5 {
+    max-width: 25rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.pixel-content p {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+ /* section: business */
+
+section.business {
+    background: #F5F7FA;
+    padding: 3rem 0;
+}
+
+.business-content h3, .business-content h3 p {
+    font-size: 2rem;
+}
+.business-content p {
+    font-size: 1rem;
+}
+
+.business-stats .stat .icon {
+    margin-right: 1rem;
+}
+
+/* section: how to design */
+.design-image img {
+    width: 20rem;
+    margin: 1rem 3rem;
+}
+.design-content h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.design-content p {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+
+/* section: tesla    */
+section.tesla {
+    background: #F5F7FA;
+}
+.tesla-content {
+    max-width: 45rem;
+    margin: 1.3rem 3rem;
+    width: fit-content;
+    text-align: left;
+}
+.tesla-content p{
+    text-align: justify;
+    font-size: .8rem;
+    margin-bottom: .7rem;
+}
+.tesla-content h3{
+    margin-bottom: .7rem;
+}
+
+.tesla-image {
+    margin: 1rem 3rem;
+}
+.tesla-image img {
+    width: 15rem;
+}
+
+/* section: marketing */
+
+.marketing h4 {
+    margin: 3rem 0;
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+.marketing p {
+    font-size: .7rem;
+    margin-bottom: .5rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+
+.image-cards .image-card img{
+    width: var(--width-image);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.image-card {
+    position: relative;
+}
+
+.image-card .card {
+    max-width: var(--width-card);
+    min-height: 5rem;
+    position: absolute;
+    background: #F5F7FA;
+    width: var(--width-card);
+    left: calc((var(--width-image) - var(--width-card)) / 2);
+    bottom: -1.5rem;
+}
+
+/* SECTION: GET DEMO */
+
+section.get-demo {
+    background: #F5F7FA;
+    padding: 3rem 0;
+}
+
+section.get-demo p {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+section.get-demo a {
+    margin: 0 auto;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    background: #263238;
+    color: #fff;
+}
+
+.footer-content .logo {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.footer-content p {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin: .3rem;
+    border-radius: 50%;
+    background: #3B464C;
+}
+.social-media a:nth-child(1) {
+    margin-left: 0;
+}
+.footer-links div {
+    margin: 3rem 3rem 3rem 0;
+}
+.footer-links div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+
+}
+.footer-links div ul li  {
+    list-style: none;
+    font-size: .7rem;
+    margin: .7rem 0;
+    color: #F5F7FA;
+
+}
+.input-container {
+    margin: 1rem 0 !important;
+    background: transparent;
+    position: relative;
+
+}
+.input-container svg {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    fill: #fff;
+}
+.input-container input {
+    border: none;
+    padding: .7rem;
+    border-radius: 5px;
+    background: #515B60;
+    color: #fff;
+
+}
+
+.input-container input::placeholder {
+    color: #fff;
+    font-size: .6rem;
+}
+    
